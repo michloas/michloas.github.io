@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[hexo搭建博客——发布到github和coding]]></title>
+    <url>%2F2018%2F08%2F09%2Fhexo1%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next</tag>
+        <tag>github</tag>
+        <tag>coding</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[hexo搭建博客——准备环境]]></title>
     <url>%2F2018%2F08%2F05%2Fhexo%2F</url>
     <content type="text"><![CDATA[前言其实很早之前就想要建立自己的一个个人博客，但是之前对于很多东西不是太熟悉。最近自己对于一些网上的东西有了很系统的了解，所以下定决心自己搞一个个人博客。但是第一次使用很多不熟悉的地方，在此记录一下自己在使用过程中遇到的坑 背景现在网上的一些大神常用的主要有hexo和jekyll，我看了一些效果图，最终还是选用了hexo的Next主题，考虑到github的服务器在国外，国内访问的时候会很缓慢，并且最近github显示图片非常慢。在参考了一下网上的各位大神的教程之后，决定同时发布到coding和github上，在使用阿里云域名解析的时候，配置国内访问使用coding，境外访问使用github。这时候你再去访问的时候就会发现速度杠杠的。 配置Hexo环境git环境git的下载地址: https://git-scm.com/downloads 至于32位还是64位则看个人电脑情况选择了，安装是没有什么难度的。 nodejs环境nodejs网站：http://nodejs.cn/ 位数也依旧看个人电脑情况，安装成功之后，输入 node -v 和npm -v 可以查看是否安装成功。 初始化本地hexo博客安装hexo1.在任意目录下右键，选择Git Bash，输入下方命令 npm install -g hexo 2.新建一个文件夹用来防止hexo文件，建好文件夹后，在建好的文件夹上点击右键，选择Git Bash，输入下方命令， hexo会自动在此文件夹下初始化搭建博客所需要的所有文件。 hexo init 3.安装依赖包 npm install 等待安装结束后，会出现如下图的node_modules文件夹 4.hexo常用的命令 hexo g #完整命令为hexo generate，用于生成静态文件 hexo s #完整命令为hexo server，用于启动服务器，主要用来本地预览 hexo d #完整命令为hexo deploy，用于将本地文件发布到github上 hexo n #完整命令为hexo new，用于新建一篇文章 5.本地查看博客，执行下面命令就可以在本地看到hexo博客了 hexo g hexo s 然后用浏览器访问http://localhost:4000/，此时可以看到一个本地的初始化的博客网站 ps: 使用hexo s 启动本地博客的时候，你发现你访问失败了，此时不用担心，不是初始化的有问题，一般是你的4000端口被占用了，如果你安装了福昕阅读器，那么恭喜你，你的4000端口被占用了。我们会使用下面的命令来指定端口访问就可以了 hexo s -p 5000 此时你在浏览器输入http://localhost:5000/，就可以看到自己初始化的博客了。 参考地址： hexo+github教程之二：hexo博客发布到github hexo安装成功，并且正确运行，但是localhost:4000不能访问 域名+解析+GitHub来搭建自己的个人网站 Hexo+Next主题优化 hexo生成博文插入图片]]></content>
